@@ -1,0 +1,70 @@
+@import "bourbon";
+@import "neat";
+
+@font-face {
+    font-family: refuse;
+    src: url(../fonts/refuse.ttf);
+}
+
+@font-face {
+    font-family: webley;
+    src: url(../fonts/weblysleekuisl.ttf);
+}
+
+@font-face {
+    font-family: webley;
+    src: url(../fonts/weblysleekuisli.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: webley;
+    src: url(../fonts/weblysleekuisb.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: webley;
+    src: url(../fonts/weblysleekuisbi.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+	font-family: webley;
+}
+
+.outline-font {
+	font-family: refuse;
+}
+
+header {
+	height: 30em;
+	background-image: url('../img/standout.jpg');
+	background-position: 50% 20%; 
+	background-size: cover;
+}
+
+.header-intro {
+	width: 40em;
+	margin-left: 10%;
+	padding-top: 3em;
+}
+
+.content {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 3em;
+}
+
+.item {
+	@include span-columns(6);
+	@include omega(2n);
+}
+
+.title {
+	margin-bottom: .5em;
+	display: block;
+}
+
+

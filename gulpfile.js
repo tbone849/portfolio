@@ -3,6 +3,8 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var connect = require('gulp-connect');
 var uglify = require('gulp-uglify');
+var sass = require('gulp-sass');
+var neat = require('node-neat');
 var minifyHTML = require('gulp-minify-html');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
@@ -30,6 +32,17 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('build/assets/libs'));
 });
 
+// Styles build task, concatenates all the files
+gulp.task('styles', function() {
+  return gulp.src('./app/assets/scss/*.scss')
+    .pipe(sass({
+      includePaths: require('node-neat').with('./app/assets/libs/mdi/scss')
+    }))
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('build/assets/css'));
+});
+
 // combine and minify js files
 gulp.task('scripts', function() {
   return gulp.src('./app/js/**/*')
@@ -48,8 +61,9 @@ gulp.task('jshint', function() {
 gulp.task('watch', ['build'], function() {
   gulp.watch('./app/*.html', ['build'] );
   gulp.watch('./app/js/**/*.js', ['build']);
+  gulp.watch('./app/assets/scss/*.scss', ['build']);
 });
 
 gulp.task('default', ['connect', 'watch', 'jshint']);
 
-gulp.task('build', ['html', 'vendor', 'scripts', 'jshint', 'connect']);
+gulp.task('build', ['html', 'vendor', 'scripts', 'styles', 'jshint']);

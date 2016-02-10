@@ -1,1 +1,1 @@
-angular.module("myApp",["lumx"]).controller("hello",["$scope",function(l){l.name="Tim"}]);
+angular.module("myApp",["lumx"]);
