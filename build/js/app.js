@@ -1,1 +1,1 @@
-angular.module("myApp",["lumx"]);
+angular.module("myApp",["lumx"]),angular.module("myApp").controller("homeController",["$scope",function(e){e.colleges=["iup","iupui","umass"],e.tools=["html","css","javascript","jquery","angular","sass","neat","gulp","git","github"]}]),angular.module("myApp").directive("blurb",function(){return{scope:{header:"@"},transclude:!0,restrict:"E",template:"<div><span class='fs-display-1 title'>{{header}}</span><p class='fs-title' ng-transclude></p></div>"}});
