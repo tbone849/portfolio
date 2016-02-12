@@ -1,5 +1,6 @@
 @import "bourbon";
 @import "neat";
+@import "../libs/lumx/dist/scss/lumx";
 
 @font-face {
     font-family: refuse;
@@ -85,4 +86,19 @@ div {
 	}
 }
 
+.github, .demo {
+	margin-top: .5em;
+}
 
+.projects {
+	display: block;
+	padding-bottom: 4em;
+	margin-bottom: 4em;
+	border-bottom: 2px $brown-300 dashed;
+
+	&:last-of-type {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 3em;
+	}
+}

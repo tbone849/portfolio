@@ -1,0 +1,13 @@
+<div class='description'>
+	<div class='item'>
+		<img class='project-img' ng-src='{{myProject.img}}'>
+	</div>
+	<div class='item'>
+		<span class='fs-display-1 title'>{{myProject.title}}</span>
+		<p class='fs-title' ng-bind-html="myProject.description"></p>
+		<p class='fs-title github' ng-show='myProject.gitHub'><b>GitHub:</b> <a target="_blank" ng-href='{{myProject.gitHub}}'>View Repository</a></p>
+		<p class='fs-title demo'>
+			<b>Live:</b> <a target="_blank" ng-href='{{myProject.demo}}'>View Site</a>
+		</p>
+	</div>
+</div>

@@ -10,6 +10,7 @@
 	<script src="./assets/libs/moment/min/moment-with-locales.js"></script>
 	<script src="./assets/libs/angular/angular.js"></script>
 	<script src="./assets/libs/lumx/dist/lumx.js"></script>
+	<script src="./assets/libs/angular-sanitize/angular-sanitize.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body ng-controller='homeController'>
@@ -46,6 +47,12 @@
 			<div class='image-row'>
 				<img ng-repeat='tool in tools | limitTo:5:5'ng-src='./assets/img/{{tool}}.jpg' width='100' class='img-round'>
 			</div>
+		</div>
+	</section>
+	<section id='projects'>
+		<div class='content'>
+			<project class='projects' ng-repeat='project in projects' my-project='project'>
+			</project> 
 		</div>
 	</section>
 </body>

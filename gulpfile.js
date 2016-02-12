@@ -32,6 +32,12 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('build/assets/libs'));
 });
 
+// copy partials to build
+gulp.task('partials', function(){
+  return gulp.src('./app/partials/**/*')
+    .pipe(gulp.dest('build/partials'));
+});
+
 // Styles build task, concatenates all the files
 gulp.task('styles', function() {
   return gulp.src('./app/assets/scss/*.scss')
@@ -45,7 +51,7 @@ gulp.task('styles', function() {
 
 // combine and minify js files
 gulp.task('scripts', function() {
-  return gulp.src('./app/js/**/*')
+  return gulp.src('./app/js/**/*.js')
     .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/js'));
@@ -60,10 +66,11 @@ gulp.task('jshint', function() {
 
 gulp.task('watch', ['build'], function() {
   gulp.watch('./app/*.html', ['build'] );
+  gulp.watch('./app/partials/*.html', ['build'])
   gulp.watch('./app/js/**/*.js', ['build']);
   gulp.watch('./app/assets/scss/*.scss', ['build']);
 });
 
 gulp.task('default', ['connect', 'watch', 'jshint']);
 
-gulp.task('build', ['html', 'vendor', 'scripts', 'styles', 'jshint']);
+gulp.task('build', ['html', 'vendor', 'partials', 'scripts', 'styles', 'jshint']);

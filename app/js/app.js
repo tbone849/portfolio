@@ -1,1 +1,1 @@
-angular.module('myApp', ['lumx']);
+angular.module('myApp', ['lumx', 'ngSanitize']);
