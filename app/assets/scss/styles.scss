@@ -102,3 +102,62 @@ div {
 		margin-bottom: 3em;
 	}
 }
+
+a:link, a:visited, a:active {
+	color: $cyan-700;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $red-A200;
+	text-decoration: none;
+}
+
+footer {
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background-color: $grey-700;
+	text-align: center;
+	padding: .5em 0;
+}
+
+.follow {
+	margin-right: 4em;
+
+	a {
+		margin-right: 1em;
+	}
+}
+
+.follow, .nav {
+	display: inline-block;
+	a:link, a:visited, a:active {
+		color: $cyan-200;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $red-200;
+		text-decoration: none;
+	}
+}
+
+.nav {
+	a {
+		display: inline-block;
+		box-sizing: border-box;
+		border-right: 2px dotted white;
+		padding-right: 1em;
+		margin-right: 1em;
+	}
+
+	a:last-of-type {
+		border-right: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+}

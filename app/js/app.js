@@ -1,1 +1,1 @@
-angular.module('myApp', ['lumx', 'ngSanitize']);
+angular.module('myApp', ['lumx', 'ngSanitize', 'smoothScroll']);

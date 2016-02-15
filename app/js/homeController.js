@@ -1,7 +1,10 @@
 angular.module('myApp')
 	.controller('homeController', ['$scope', function($scope){
+		
 		$scope.colleges = ['iup', 'iupui', 'umass'];
+		
 		$scope.tools = ['html', 'css', 'javascript', 'jquery', 'angular', 'sass', 'neat', 'gulp', 'git', 'github'];
+		
 		$scope.projects = [
 			{
 				title: 'Star Wars: A Visual Guide',
@@ -13,8 +16,29 @@ angular.module('myApp')
 			{
 				title: 'Farmer Courses',
 				img: './assets/img/farmercourses.jpg',
-				description: 'A website for a company called Farmer Courses. The company provides Farm Service Agency approved courses that focus on improving profit and production while addressing finances and risk management. Users span from all over the United States, to some other countries as well. Developed in my pre-Angular days using JavaScript, jQuery, and jQueryUI.',
+				description: 'A website for a company that provides Farm Service Agency approved courses that focus on improving profit and production while addressing finances and risk management. Users span from all over the United States, to some other countries as well. Developed in my pre-Angular days using JavaScript, jQuery, and jQueryUI.',
 				demo: 'http://farmercourses.com/'
+			},
+			{
+				title: 'Weekly NFL Fantasy Leaders',
+				img: './assets/img/nfl.jpg',
+				description: 'Utilizes the NFL.com Fantasy Football Web Services API to deliver weekly fantasy football leaders. The leaders can be viewed by team, week, or both. This is an original project I developed utilizing jQuery.',
+				gitHub: 'https://github.com/tbone849/nfl-fantasy-stats',
+				demo: 'http://tbone849.github.io/nfl-fantasy-stats/'
+			},
+			{
+				title: 'Waitstaff Calculator',
+				img: './assets/img/calculator.jpg',
+				description: "An Angular app I created during my education at Thinkful. This app will calculate tip earnings from a meal's base price, tax rate, and tip percentage. It will also update the customer charges a running total of your earnings that include tip total, how many meals you served, and the average tip per meal.",
+				gitHub: 'https://github.com/tbone849/waitstaff-calc',
+				demo: 'http://tbone849.github.io/waitstaff-calc/#/'
+			},
+			{
+				title: 'Movie Villain Quiz',
+				img: './assets/img/ghostbusters.jpg',
+				description: 'A quiz app utilizing jQuery. Test your knowledge of classic movie villains by associating the villain picture to the correct movie title.',
+				gitHub: 'https://github.com/tbone849/villian-movie-quiz',
+				demo: 'http://tbone849.github.io/villian-movie-quiz/'
 			}
 		];
 	}]);
