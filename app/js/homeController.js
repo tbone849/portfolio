@@ -7,6 +7,13 @@ angular.module('myApp')
 		
 		$scope.projects = [
 			{
+				titel: 'Pok&#233;mon: A Visual Guide',
+				img: './assets/img/pokemon.jpg',
+				description: 'A web app I developed using <a href="http://pokeapi.co/">Pokeapi</a> to display basic information about Pok&#233;mon characters. Infomation includes basic stats, species information, and evolution chain. You can search for Pok&#233;mon by name or just browse.',
+				gitHub: 'https://github.com/tbone849/pokemon-guide',
+				demo: 'https://pokemon-visualguide.com'
+			},
+			{
 				title: 'Star Wars: A Visual Guide',
 				img: './assets/img/starwars.jpg',
 				description: 'An Angular app developed using the <a href="http://swapi.co/" target="_blank">Star Wars API</a> to display basic information about Star Wars characters, films, starships, vehicles, species, planets, and their relations. If you are like me and you remember faces better than names, then this visual guide is right up your alley.',
