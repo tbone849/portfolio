@@ -7,7 +7,7 @@ angular.module('myApp')
 		
 		$scope.projects = [
 			{
-				titel: 'Pok&#233;mon: A Visual Guide',
+				title: 'Pokemon: A Visual Guide',
 				img: './assets/img/pokemon.jpg',
 				description: 'A web app I developed using <a href="http://pokeapi.co/">Pokeapi</a> to display basic information about Pok&#233;mon characters. Infomation includes basic stats, species information, and evolution chain. You can search for Pok&#233;mon by name or just browse.',
 				gitHub: 'https://github.com/tbone849/pokemon-guide',
