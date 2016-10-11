@@ -3,9 +3,15 @@ angular.module('myApp')
 		
 		$scope.colleges = ['iup', 'iupui', 'umass'];
 		
-		$scope.tools = ['html', 'css', 'javascript', 'jquery', 'angular', 'sass', 'neat', 'gulp', 'git', 'github'];
+		$scope.tools = ['html', 'css', 'javascript', 'jquery', 'angular', 'sass', 'bootstrap', 'gulp', 'git', 'github'];
 		
 		$scope.projects = [
+			{
+				title: 'Walk the Mock',
+				img: './assets/img/walkthemock.jpg',
+				description: "A web app that allows users to draft incoming NFL prospects for their favorite team. Features include rank sorting and sharing and extended player information to aid educated choices. I developed Walk the Mock using AngularJS and Google's Firebase.",
+				demo: 'https://walkthemock.com'
+			},
 			{
 				title: 'Pokemon: A Visual Guide',
 				img: './assets/img/pokemon.jpg',
