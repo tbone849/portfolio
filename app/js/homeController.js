@@ -1,18 +1,11 @@
 angular.module('myApp')
 	.controller('homeController', ['$scope', function($scope){
-		
+
 		$scope.colleges = ['iup', 'iupui', 'umass'];
-		
+
 		$scope.tools = ['html', 'css', 'javascript', 'jquery', 'angular', 'sass', 'bootstrap', 'gulp', 'git', 'github'];
-		
+
 		$scope.projects = [
-			{
-				title: 'Magic 8 Ball',
-				img: './assets/img/eight.jpg',
-				description: "Fun app I built to get my feet wet with Angular 2. Ask a question to the mystic eight ball and watch your answer be revealed.",
-				demo: 'https://tbone849.github.io/magic8/',
-				gitHub: 'https://github.com/tbone849/magic8'
-			},
 			{
 				title: 'Walk the Mock',
 				img: './assets/img/walkthemock.jpg',
@@ -40,18 +33,11 @@ angular.module('myApp')
 				demo: 'http://farmercourses.com/'
 			},
 			{
-				title: 'Brookville Bands',
-				img: './assets/img/brkv.jpg',
-				description: 'A website I built for the Brookville Area Jr/Sr High School band program out of Brookville, PA. There are pages that showcase each band, a calendar of events, photos, etc. I built this web app using AngularJS and Lumx.',
-				gitHub: 'https://github.com/tbone849/brookville-bands',
-				demo: 'http://brookvillebands.com'
-			},
-			{
-				title: 'Weekly NFL Fantasy Leaders',
-				img: './assets/img/nfl.jpg',
-				description: 'Utilizes the NFL.com Fantasy Football Web Services API to deliver weekly fantasy football leaders. The leaders can be viewed by team, week, or both. This is an original project I developed utilizing jQuery.',
-				gitHub: 'https://github.com/tbone849/nfl-fantasy-stats',
-				demo: 'http://tbone849.github.io/nfl-fantasy-stats/'
+				title: 'Magic 8 Ball',
+				img: './assets/img/eight.jpg',
+				description: "Fun app I built to get my feet wet with Angular 2. Ask a question to the mystic eight ball and watch your answer be revealed.",
+				demo: 'https://tbone849.github.io/magic8/',
+				gitHub: 'https://github.com/tbone849/magic8'
 			},
 			{
 				title: 'Waitstaff Calculator',
