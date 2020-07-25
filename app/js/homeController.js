@@ -8,7 +8,7 @@ angular.module('myApp')
 		$scope.projects = [
 			{
 				title: 'Walk the Mock',
-				img: './assets/img/walkthemock.jpg',
+				img: './assets/img/walkthemock.png',
 				description: "A web app that allows users to draft incoming NFL prospects for their favorite team. Features include rank sorting and sharing and extended player information to aid educated choices. I developed Walk the Mock using AngularJS and Google's Firebase.",
 				demo: 'https://walkthemock.com'
 			},
