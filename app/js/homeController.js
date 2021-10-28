@@ -8,9 +8,21 @@ angular.module('myApp')
 		$scope.projects = [
 			{
 				title: 'Walk the Mock',
-				img: './assets/img/walkthemock.png',
+				img: './assets/img/wtm.jpg',
 				description: "A web app that allows users to draft incoming NFL prospects for their favorite team. Features include rank sorting and sharing and extended player information to aid educated choices. I developed Walk the Mock using AngularJS and Google's Firebase.",
 				demo: 'https://walkthemock.com'
+			},
+			{
+				title: 'Portal Box',
+				img: './assets/img/portalbox.jpg',
+				description: "An e-commerce website built with Wordpress for the selling of pop culture themed boxes for cats to play in.",
+				demo: 'https://theportalbox.com'
+			},
+			{
+				title: 'Flair Drum Major Academy',
+				img: './assets/img/flair.jpg',
+				description: "A Wordpress site built for the Flair Drum Major Academy, a virutal camp for aspiring and experienced drum majors.",
+				demo: 'https://flairdmacademy.com'
 			},
 			{
 				title: 'Pokemon: A Visual Guide',
@@ -31,27 +43,6 @@ angular.module('myApp')
 				img: './assets/img/farmercourses.jpg',
 				description: 'A website for a company that provides Farm Service Agency approved courses that focus on improving profit and production while addressing finances and risk management. Users span from all over the United States, to some other countries as well. Developed in my pre-Angular days using JavaScript, jQuery, and jQueryUI.',
 				demo: 'http://farmercourses.com/'
-			},
-			{
-				title: 'Magic 8 Ball',
-				img: './assets/img/eight.jpg',
-				description: "Fun app I built to get my feet wet with Angular 2. Ask a question to the mystic eight ball and watch your answer be revealed.",
-				demo: 'https://tbone849.github.io/magic8/',
-				gitHub: 'https://github.com/tbone849/magic8'
-			},
-			{
-				title: 'Waitstaff Calculator',
-				img: './assets/img/calculator.jpg',
-				description: "An Angular app I created during my education at Thinkful. This app will calculate tip earnings from a meal's base price, tax rate, and tip percentage. It will also update the customer charges a running total of your earnings that include tip total, how many meals you served, and the average tip per meal.",
-				gitHub: 'https://github.com/tbone849/waitstaff-calc',
-				demo: 'http://tbone849.github.io/waitstaff-calc/#/'
-			},
-			{
-				title: 'Movie Villain Quiz',
-				img: './assets/img/ghostbusters.jpg',
-				description: 'A quiz app utilizing jQuery. Test your knowledge of classic movie villains by associating the villain picture to the correct movie title.',
-				gitHub: 'https://github.com/tbone849/villian-movie-quiz',
-				demo: 'http://tbone849.github.io/villian-movie-quiz/'
 			}
 		];
 	}]);
